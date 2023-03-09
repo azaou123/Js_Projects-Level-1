@@ -1,0 +1,40 @@
+
+body{
+    background-color: rgb(238, 210, 134);
+    justify-content: center;
+    margin-top: 10%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+h2{
+    font-size: 90px;margin-bottom: 50px;
+}
+
+span{
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+button{
+    margin-top: 40px;
+    border: solid 1px gray;
+    border-radius: 7px;
+    padding: 5px 10px;
+    font-size: larger;
+    font-weight: 800;
+}
+.decrement{
+    color: rgb(177, 55, 55);
+}
+.decrement:hover{
+    background-color: rgb(177, 55, 55);
+    color: white;
+}
+.increment{
+    color: rgb(63, 196, 63);
+}
+.increment:hover{
+    background-color: rgb(63, 196, 63);
+    color: white;
+}
