@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/fv-icon.png" type="image/x-icon">
+    <!-- CSS Link  -->
+    <link rel="stylesheet" href="style.css">
+    <title>1-Calculator</title>
+</head>
+<body id="bod">
+    <!-- Header part  -->
+        <h2>Calculator Using <br> HTML-CSS-JS</h2>
+    <!-- Content Part  -->
+    <div class="cal">
+        <div class="l1">
+            <input type="text" name="result" class="result" id="result" placeholder="Result" readonly>
+            <input type="button" id="restart" class="restart" value="C" onclick="restartOper()">
+        </div>
+        <div class="l2">
+            <input type="button" value="1" id="one" onclick="showCaracter (1)">
+            <input type="button" value="2" id="two" onclick="showCaracter (2)">
+            <input type="button" value="3" id="three" onclick="showCaracter (3)">
+            <input type="button" value="+" id="add" onclick="showCaracter ('+')">
+        </div>
+        <div class="l3">
+            <input type="button" value="4" id="four" onclick="showCaracter (4)">
+            <input type="button" value="5" id="five" onclick="showCaracter (5)">
+            <input type="button" value="6" id="six" onclick="showCaracter (6)">
+            <input type="button" value="-" id="moins" onclick="showCaracter ('-')">
+        </div>
+        <div class="l4">
+            <input type="button" value="7" id="seven" onclick="showCaracter (7)">
+            <input type="button" value="8" id="eight" onclick="showCaracter (8)">
+            <input type="button" value="9" id="nine" onclick="showCaracter (9)">
+            <input type="button" value="*" id="multiple" onclick="showCaracter ('*')">
+        </div>
+        <div class="l5">
+            <input type="button" value="/" onclick="showCaracter ('/')" />
+            <input type="button" value="0" id="zero" onclick="showCaracter (0)" />
+            <input type="button" value="." class="dot" onclick="showCaracter ('.')" />
+            <input type="button" value="=" class="equal" onclick="result.value = eval(result.value||null)" />
+        </div>
+    </div>
+    <input type="button" value="Change Mode" class="mode" id="mode" onclick="changeMode()">
+    <!-- Footer Part  -->
+    <footer>
+        <h3>made by Azaou Badr</h3> <br>
+        <div class="contact">
+            <a href="mailto:azawbadr@gmail.com"><img src="./imgs/email.png" alt="email icon"></a>
+            <a target="_blank" href="http://github.com/azaou123"><img src="./imgs/git.png" alt="git icon"></a>
+        </div>
+    </footer>
+    <!-- Fichier JavaScript  -->
+    <script src="./main.js"></script>
+</body>
+</html>
